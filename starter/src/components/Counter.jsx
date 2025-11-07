@@ -4,7 +4,10 @@ import { increment, decrement } from "../redux/slices/CounterSlice";
 
 const Counter = () => {
   const count = useSelector((state) => state.counter.value);
+  //useSelector is used to access the state from the redux store jo ki count hai yaha par
+  //state is the entire redux store state, state.counter is the slice name, .value is the property in the slice
   const dispatch = useDispatch();
+  //useDispatch is used to dispatch actions to the redux store
   const [theme, setTheme] = useState("default");
 
   const themes = {

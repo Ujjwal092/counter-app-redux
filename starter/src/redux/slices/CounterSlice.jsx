@@ -13,7 +13,7 @@ export const CounterSlice = createSlice({
       newVal.value += 1; //hmre state ki  (state) value 1 se increment krdo
     },
     decrement: (newVal) => {
-      newVal.value -= 1; //hmre state ki  (state) value 1 se decrement krdo
+      newVal.value -= 1; //hmre state ki  (newVal) value 1 se decrement krdo
     },
   },
 });
